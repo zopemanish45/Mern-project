@@ -13,6 +13,8 @@ dbConnect();
 
 
 app.use(cors())
+app.options('*', cors());
+
 const port = process.env.PORT || 4000;
 const hostname = process.env.HOST_NAME || 'localhost'
 // app.get('/api/v1/users', (req, res) => {
